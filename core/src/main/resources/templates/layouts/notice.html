@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+<div th:fragment="alertStatic (type, message)">
+    <div th:if="${!#strings.isEmpty(type) and !#strings.isEmpty(message) and message != null}"
+         class="alert my-3" th:classappend="'alert-' + ${type}">
+        <span th:text="${message}"></span>
+    </div>
+</div>
+<div th:fragment="alert (type, message)">
+    <div th:if="${!#strings.isEmpty(type) and !#strings.isEmpty(message) and message != null}"
+         class="alert my-3 fixed-top shadow border-0" th:classappend="'alert-' + ${type}"
+         id="sysNotice"
+         style="display:none;width:400px;margin:0 auto;">
+        <span th:text="${message}"></span>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+<div th:fragment="header">
+    <header class="d-print-none bg-primary px-3">
+        <nav class="navbar py-2 px-0">
+            <div class="d-flex w-100 align-items-center">
+                <button class="btn text-dark d-block d-sm-none menu-toggle" onclick="menu.toggle()"><i
+                        class="fa fa-bars"></i></button>
+                <div class="flex-fill d-flex align-items-center">
+                    <img src="/images/hxxy_icon.png" style="height:24px;margin-right:10px;">
+                    <h5 class="my-0 mr-3 font-weight-bold text-light">惠学校园</h5>
+                </div>
+
+                <!-- User info -->
+                <div>
+                    <a class="btn text-light btn-inform" title="消息" href="/oa/messages" data-toggle="tooltip"
+                       data-placement="bottom">
+                        <i class="fa fa-mail-bulk"></i>
+                    </a>
+                    <a class="btn text-light btn-inform" href="/oa/flows" title="审批" data-toggle="tooltip"
+                       data-placement="bottom">
+                        <i class="fa fa-check-circle"></i>
+                    </a>
+                    <a class="btn text-light btn-inform" title="公告" href="/oa/notices" data-toggle="tooltip"
+                       data-placement="bottom">
+                        <i class="fa fa-bullhorn"></i>
+                    </a>
+                    <a class="btn text-light btn-inform" title="登出" data-method="post" href="/admin/sign_out">
+                        <i class="fa fa-sign-out-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+</div>
+</body>
+</html>

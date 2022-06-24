@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+<div th:fragment="paginate (pageable)">
+    <div>
+        <p>当前第<span th:text="${pageable.number + 1}"></span>页，
+            总计<span th:text="${pageable.totalPages}"></span>页，
+            总记录数<span th:text="${pageable.totalElements}"></span></p>
+
+        <ul class="pagination" th:if="${pageable.totalPages > 0}">
+            <li class="page-item">
+                <button th:if="${pageable.hasPrevious}" class="page-link" type="button"
+                        onclick="paginate.toPage(this)" th:data="${pageable.number - 1}">
+                    <i class="fa fa-chevron-left"></i>
+                </button>
+                <button th:if="${!pageable.hasPrevious}" class="disabled page-link" type="button">
+                    <i class="fa fa-chevron-left"></i>
+                </button>
+            </li>
+
+            <li class="page-item"
+                th:each="pageNo : ${@h.pagenateList(pageable.number, pageable.totalPages)}"
+                th:class="${pageable.number == pageNo}? 'active' : ''">
+                <button th:if="${pageable.number == pageNo}" type="button" class="page-link">
+                    <span th:text="${pageNo + 1}"></span>
+                </button>
+                <button th:if="${pageable.number != pageNo}" type="button" class="page-link"
+                        onclick="paginate.toPage(this)" th:data="${pageNo}">
+                    <span th:text="${pageNo + 1}"></span>
+                </button>
+            </li>
+            <li class="page-item">
+                <button th:if="${pageable.hasNext}" class="page-link"
+                        href="#" onclick="paginate.toPage(this)" th:data="${pageable.number + 1}">
+                    <i class="fa fa-chevron-right"></i>
+                </button>
+                <button th:if="${!pageable.hasNext}" class="disabled page-link" type="button">
+                    <i class="fa fa-chevron-right"></i>
+                </button>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+

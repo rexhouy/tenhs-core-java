@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>抱歉，我们遇到了一个错误</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #EFEFEF;
+            color: #2E2F30;
+            text-align: center;
+            font-family: arial, sans-serif;
+            margin: 0;
+        }
+
+        .btn {
+            box-shadow: 0 1px 2px -1px rgba(0, 0, 0, .2), 0 1px 2px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12);
+            border-radius: 30px;
+            text-decoration: none;
+            padding: 8px 30px 5px 30px;
+            background: #f8ba00;
+            color: #1b2940;
+            font-size: .9em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+<div style="background:#0cab90;width:100;height:120px;">
+</div>
+<div style="position:relative;top:-100px;margin:0 auto;max-width:800px;">
+    <div style="margin:0 15px;box-shadow:0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);color:#721c24;background:#fff;">
+        <img src="/images/err.jpg"></img>
+        <div>
+            <h1 style="margin:0;">HTTP <span th:text="${code}"></span></h1>
+            <small>我们遇到了一个错误！</small>
+        </div>
+        <div style="padding:30px 0 50px 0;">
+            <a href="/" class="btn">返回主页</a>
+        </div>
+    </div>
+</div>
+<div style="color:#888;margin-top:-80px;">
+    <small>© 2017 拾器时代</small><br>
+    <small>京ICP备15036211号-1</small>
+</div>
+</body>
+</html>

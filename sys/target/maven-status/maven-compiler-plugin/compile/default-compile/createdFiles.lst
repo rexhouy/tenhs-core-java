@@ -1,0 +1,3 @@
+com/tenhs/sys/controllers/DepartmentsController.class
+com/tenhs/sys/models/Department.class
+com/tenhs/sys/mappers/DepartmentMapper.class

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+<div th:fragment="menu">
+    <div style="width:160px;min-width:160px;overflow:hidden;" class="py-3 align-self-stretch">
+        <div class="mb-5">
+            <nav class="sidebar d-print-none menu" id="sideMenu">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="menu-item active" href="/admin/">
+                            <i class="fa fa-home"></i>青蓝水运动</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="menu-item " href="/admin/reports">
+                            <i class="fa fa-chart-line"></i>统计报表</a>
+                    </li>
+                </ul>
+
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <small class="menu-item text-muted">销售</small>
+                    </li>
+                    <li class="nav-item">
+                        <a class="menu-item " href="/admin/products">
+                            <i class="fa fa-shopping-bag"></i>商品管理</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="menu-item " href="/admin/orders">
+                            <i class="fa fa-layer-group"></i>订单管理</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="menu-item " href="/admin/coupons">
+                            <i class="fa fa-tags"></i>分享有礼</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="menu-item " href="/admin/promotions">
+                            <i class="fa fa-tags"></i>促销管理</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="menu-item " href="/admin/trades">
+                            <i class="fa fa-yen-sign"></i>交易流水</a>
+                    </li>
+                </ul>
+
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <small class="menu-item text-muted">教学</small>
+                    </li>
+                    <li class="nav-item">
+                        <a class="menu-item " href="/admin/users">
+                            <i class="fa fa-user"></i>会员管理</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="menu-item " href="/admin/klasses">
+                            <i class="fa fa-bell"></i>课程管理</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="menu-item " href="/admin/appointments">
+                            <i class="fa fa-comment"></i>预约管理</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="menu-item " href="/admin/notices">
+                            <i class="fa fa-bullhorn"></i>通知管理</a>
+                    </li>
+
+                </ul>
+
+
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <small class="menu-item text-muted">设置</small>
+                    </li>
+                    <li class="nav-item">
+                        <a class="menu-item " href="/admin/shops">
+                            <i class="fa fa-store"></i>门店管理</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="menu-item " href="/admin/teachers">
+                            <i class="fa fa-swimmer"></i>教练管理</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="menu-item " href="/admin/indicators">
+                            <i class="fa fa-star"></i>评价指标</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="menu-item " href="/admin/admins">
+                            <i class="fa fa-users"></i>系统用户</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+</body>
+</html>

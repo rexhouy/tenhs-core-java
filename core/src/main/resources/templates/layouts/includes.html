@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+<div th:fragment="meta">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="theme-color" content="#1b2940">
+    <title>Tenqsd</title>
+    <link th:href="@{favicon.ico}" rel="shortcut icon"/>
+
+</div>
+<div th:fragment="javascripts">
+    <script src="/src/main/resources/staticin/resources/static/javascripts/vendor/jquery.min.js"
+            th:src="@{/javascripts/vendor/jquery.min.js}"></script>
+    <script src="/src/main/resources/staticin/resources/static/javascripts/vendor/popper.min.js"
+            th:src="@{/javascripts/vendor/popper.min.js}"></script>
+    <script src="/src/main/resources/staticin/resources/static/javascripts/vendor/bootstrap.min.js"
+            th:src="@{/javascripts/vendor/bootstrap.min.js}"></script>
+    <script src="/src/main/resources/staticin/resources/static/javascripts/vendor/datetimepicker.min.js"
+            th:src="@{/javascripts/vendor/datetimepicker.min.js}"></script>
+    <script src="/src/main/resources/staticin/resources/static/javascripts/application.js"
+            th:src="@{/javascripts/application.js}"></script>
+</div>
+<div th:fragment="stylesheets">
+    <link href="/src/main/resources/staticin/resources/static/stylesheets/vendor/bootstrap.min.css"
+          th:href="@{/stylesheets/vendor/bootstrap.min.css}"
+          rel="stylesheet"/>
+    <link href="/src/main/resources/staticin/resources/static/stylesheets/vendor/font-awesome.min.css"
+          th:href="@{/stylesheets/vendor/font-awesome.min.css}"
+          rel="stylesheet"/>
+    <link href="/src/main/resources/staticin/resources/static/stylesheets/vendor/datetimepicker.min.css"
+          th:href="@{/stylesheets/vendor/datetimepicker.min.css}" rel="stylesheet"/>
+    <link href="/src/main/resources/staticin/resources/static/stylesheets/application.css"
+          th:href="@{/stylesheets/application.css}" rel="stylesheet"/>
+</div>
+</body>
+</html>
+

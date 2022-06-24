@@ -1,0 +1,8 @@
+com/tenhs/web/services/CacheExampleService.class
+com/tenhs/web/controllers/DashboardController.class
+com/tenhs/web/jobs/TestJob.class
+com/tenhs/web/mappers/TestMapper.class
+com/tenhs/web/models/Test.class
+com/tenhs/TenhsApplication.class
+com/tenhs/web/configs/XxlJobConfig.class
+com/tenhs/web/controllers/TestController.class
