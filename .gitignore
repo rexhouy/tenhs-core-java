@@ -1,0 +1,6 @@
+bin/flyway
+bin/migrate.sh
+log
+.idea/
+*.iml
+**/.DS_Store
